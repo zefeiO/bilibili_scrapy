@@ -1,6 +1,7 @@
 from videos import get_videos
 from fetch_comments import get_comments
 from config import Config
+from time import sleep
 
 
 if __name__ == "__main__":
@@ -21,6 +22,6 @@ if __name__ == "__main__":
                 else:
                     count[name] = all_coms.count(emoji)
         
-        print("------------------------------{}------------------------------------".format(item[0]))
+        print("-"*20 + item[0] + "-"*20)
         for key in count:
             print(key, ": ", count[key])

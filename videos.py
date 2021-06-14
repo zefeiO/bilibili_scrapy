@@ -14,6 +14,7 @@ def get_videos(home_page: str, video_num: int):
         video_api = api_model.format(mid, pn)
         res = requests.get(video_api)
         data = res.json()
+        # Get list of data for videos
         vlist = data.get("data").get("list").get("vlist")
         for video in vlist:
             aid = video.get("aid")

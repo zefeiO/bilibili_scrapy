@@ -2,11 +2,11 @@ class Config:
     PATH = "D:\projects\scrawling\driver\chromedriver.exe"
 
     HOMEPAGES = [
-        ("Diana", "https://space.bilibili.com/672328094", 73)
-        ("Carol", "https://space.bilibili.com/351609538", 15)
-        ("Eileen", "https://space.bilibili.com/672342685", 36)
-        ("Bella", "https://space.bilibili.com/672353429", 51)
-        ("Ava", "https://space.bilibili.com/672346917", 52)
+        ("Carol", "https://space.bilibili.com/351609538/video", 15),
+        ("Diana", "https://space.bilibili.com/672328094/video", 73),
+        ("Eileen", "https://space.bilibili.com/672342685/video", 36),
+        ("Bella", "https://space.bilibili.com/672353429/video", 51),
+        ("Ava", "https://space.bilibili.com/672346917/video", 52)
     ]
 
     EmojiCharac = {
