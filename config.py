@@ -2,11 +2,11 @@ class Config:
     PATH = "D:\projects\scrawling\driver\chromedriver.exe"
 
     HOMEPAGES = [
-        ("Carol", "https://space.bilibili.com/351609538/video", 15),
-        ("Diana", "https://space.bilibili.com/672328094/video", 73),
         ("Eileen", "https://space.bilibili.com/672342685/video", 36),
+        ("Diana", "https://space.bilibili.com/672328094/video", 73),
         ("Bella", "https://space.bilibili.com/672353429/video", 51),
-        ("Ava", "https://space.bilibili.com/672346917/video", 52)
+        ("Ava", "https://space.bilibili.com/672346917/video", 52),
+        ("Carol", "https://space.bilibili.com/351609538/video", 15)
     ]
 
     EmojiCharac = {
@@ -51,3 +51,17 @@ class Config:
         "无语": "[无语]",
         "嘉门": "[保佑]"
     }
+
+    proxies = [
+        {"http": "http://167.172.180.46:33555", "https": "https://167.172.180.46:33555"},
+        {"http": "http://60.170.152.46:38888", "https": "https://60.170.152.46:38888"},
+        {"http": "http://131.153.151.250:8003", "https": "https://131.153.151.250:8003"},
+        {"http": "http://124.70.155.89:808", "https": "https://124.70.155.89:808"},
+        {"http": "http://222.85.190.32:8090", "https": "https://222.85.190.32:8090"},
+        {"http": "http://103.103.3.6:8080", "https": "https://103.103.3.6:8080"},
+        {"http": "http://61.37.223.152:8080", "https": "https://61.37.223.152:8080"},
+        {"http": "http://211.24.95.49:47615", "https": "https://211.24.95.49:47615"},
+        {"http": "http://190.85.244.70:999", "https": "https://190.85.244.70:999"},
+        {"http": "http://197.148.50.132:8080", "https": "https://197.148.50.132:8080"}
+
+    ]
