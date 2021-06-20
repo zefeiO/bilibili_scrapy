@@ -1,12 +1,11 @@
 from videos import get_videos
 from fetch_comments import get_comments
 from config import Config
-from time import sleep
 
 
 if __name__ == "__main__":
+    # Get the aid and the number of comments associated with each video on homepage
     for item in Config.HOMEPAGES:
-        # Get the aid and the number of comments associated with each video on homepage
         video_list = get_videos(home_page=item[1], video_num=item[2])
         count = dict()
         for video in video_list:

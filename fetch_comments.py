@@ -9,12 +9,20 @@ def get_comments(oid, com_num):
     messages = list()
     for next in range(req_num):
         comment_api = api_model.format(next, oid)
-        res = requests.get(comment_api)
-
+        res = None
         # repeat the request when it has been blocked
-        while res.status_code != 200:
-            time.sleep(60)
-            res = requests.get(comment_api)
+        while True:
+            try:
+                res = requests.get(comment_api)
+            except:
+                time.sleep(60)
+                continue
+
+            if res.status_code != 200:
+                time.sleep(60)
+                continue
+            else:
+                break
         
         data = res.json()
         replies = data.get("data").get("replies")
